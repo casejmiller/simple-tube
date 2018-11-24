@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 
 import SearchBar from './SearchBar';
 import youtube from '../apis/youtube';
@@ -31,7 +32,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="ui container">
+      <div className="ui container app-main">
         <SearchBar onTermSubmit={this.onTermSubmit} />
         <div className="ui grid">
           <div className="ui row">
